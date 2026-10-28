@@ -1,0 +1,323 @@
+# Results / Resultados — Key figures by study / Cifras clave por estudio
+
+These are the figures that appear in the book *Being right isn't enough to win*, gathered here so they can be cross-checked at a glance. Unless stated otherwise, every figure comes from a backtest (a simulation on historical data); a few come from a demo account, and this is indicated. None comes from a real-money account.
+
+In total: forty-one studies — five in forex, fifteen in cryptocurrencies and twenty-one in equities.
+
+---
+
+## The three ways to lose
+
+Not every "no" is worth the same. The book separates three ways an idea can fail, and confusing them leads to bad decisions:
+
+- Doesn't work: the effect was measured properly and it isn't there, or it goes against you. A definitive no.
+- Couldn't be measured: there were not enough cases to tell a real signal from chance. Not "there is nothing", but "it can't be known yet".
+- Works, but not enough: the effect exists and is positive, but it does not clear the bar set in advance.
+
+Some studies were not bets at all, but measuring pieces: a tool (for instance, the cost model) or a control to compare against.
+
+---
+
+## Before everything, forex (August 2025)
+
+The project started in forex, on MetaTrader 5. Exploratory, with nothing sealed in advance.
+
+| Study | What happened | Verdict |
+|---|---|---|
+| Strength of each currency against all others | 163 currencies, 13,203 pairs; −0.8 % against a target of +35–40 % per week; the exotic pairs could not be traded (no liquidity, no real spread) | doesn't work |
+| Anti-spread engine | infrastructure, not strategy; never reached a backtest verdict | no verdict |
+
+The return to forex is in Part III.
+
+---
+
+## Part I · Cryptocurrencies — fifteen ideas
+
+Thirteen market hypotheses, one tool and one control. The last gates of this part were sealed in August and September 2026.
+
+| # | Idea | What happened | Verdict |
+|---|---|---|---|
+| 1 | Liquidation cascade | −4.7 %/year | doesn't work |
+| 2 | Ignition (momentum) | coin toss; none survive | doesn't work |
+| 3 | Funding → direction | negative in 24 of 24 variants | doesn't work |
+| 4 | Grid v4 (cycles) | 0 of 720 survive | doesn't work |
+| 5 | Whitelist | 0 of 911 survive | doesn't work |
+| 6 | Continuous positioning | −0.25 % per day traded; 0 of 6 signals add anything | doesn't work |
+| 7 | Carry | +6.5 %/year, below the 12 % bar | works, not enough |
+| 8 | Exhaustion (BTC/ETH) | 49 cases, 242 needed | couldn't be measured |
+| 9 | Exhaustion (12 coins) | 174 cases, 1,262 needed | couldn't be measured |
+| 10 | Capitulation | 288 cases, 821 needed | couldn't be measured |
+| 11 | Triple extreme | 240 cases, 1,496 needed | couldn't be measured |
+| 12 | Ignition (hourly variant) | does not confirm out of sample either | doesn't work |
+| 13 | Cost model v2 | validated (0.27 %) | tool |
+| 14 | Price-only control | measurement baseline | control |
+| 15 | "Bearish Sunday" | it was the tide, not skill | doesn't work (tide) |
+
+The liquidation cascade, the best documented study (backtest):
+
+- Gross rebound measured: +0.034 %.
+- Round-trip trading cost: about 0.15 %, more than four times the rebound.
+- Traded for a full year with prudent position sizing: −4.7 % per year. With aggressive sizing, the account would have been ruined.
+- Winning trades: 24.4 %. Being right and winning are not the same thing.
+- Data: in a single year of free data, almost three million records and more than four thousand cascades.
+- Sealed on 27 August 2026.
+
+Other figures from this part:
+
+- Ignition: the best "cell" made +70 % a year, but it was the best of 1,536, and it was thirty days of data stretched to a year. The median cell lost 0.22 % a day. A cost bug had inflated the cost about two hundred times.
+- Continuous positioning (the last gate, sealed on 4 September 2026): almost seventeen thousand coin-days, May 2022 to August 2026, twelve large coins.
+- Cost of paid data: €0.
+- For comparison: buying the US index and holding it gave 10.8 % a year, 1993–2026, in the same test.
+
+Seven of the fifteen were signed before looking at the data (the cascade, carry, positioning, the three exhaustion tests on 12 coins, capitulation and triple extreme, and the control). The other eight were done before that system existed, or were tools: measured with the same care, but without a seal.
+
+---
+
+## Part II · Equities — more than twenty studies, each with its autopsy and its number
+
+### Three eras, and how the method learned not to fool itself
+
+Twenty-one studies across three eras, in which the method matured along the way. None with an edge that survived costs.
+
+#### First era: I thought I had it (measured, not yet sealed)
+
+| Study | The number that closed it | Verdict |
+|---|---|---|
+| The hunt that followed the sun: pre-market gappers | 53 % hit rate against a 42 % base; 21,730 gappers, 263 combinations | no signal |
+| · intraday: does the morning peak keep rising? | −0.35 % per trade | dies (sealed afterwards) |
+| · structure: do age, splits or type separate them? | −0.13 %; the positive part was June | dies (sealed afterwards) |
+| · short pressure: does short crowding predict? | it was liquidity, not shorts: −0.18 % | dies (sealed afterwards) |
+| World markets (the pattern outside the US) | 0 tradable rules in 7 exchanges | explored |
+| Rebound after a trading halt (halt-resume) | real profit factor 1.04; the 12.6 was a mirage from looking at the future | no edge |
+| 21,384 trading halts | best AUC 0.58 (a coin: 0.50) | no edge |
+| Clean gap-up: follow the opening jump | 1 hit in 20, apparent; an illusion | dies |
+| Gap reversal: bet the jump unwinds | −1.40 % per trade (median) | dies |
+| Sector contagion | the signal does not cover the cost | dies |
+
+The hunt that followed the sun was explored before the discipline existed: it was documented and sealed after seeing the ground. A late seal does not turn a finding into a prediction; it only stops anyone, the author included, from rewriting afterwards what was done. The three pre-market veins were closed at the end with the same sealed system.
+
+#### Second era: the contract signed before looking
+
+| Family | The number that killed it | Signed |
+|---|---|---|
+| A · Real cost | tool: median spread 0.06 %; at the open, between 0.3 % and 0.4 % | no (tool) |
+| B · Aggressor flow | −0.035 % per trade: signal ~0.01 % against cost ~0.06 %; the placebo matches it | yes |
+| C · Late momentum | the out-of-sample gain came from a single day, when 87 % of stocks rose | yes |
+| D · Breadth | explains 0.6 % of the move | yes |
+| E · After earnings | −0.73 % against the control | yes |
+| F · Entering the index | 96 % of the effect was momentum | yes |
+| G · Turn of the month | signal +0.17 %, placebo +0.19 % per trade (S&P 500, 2016–2026; check 2005–2015) | yes |
+| I · Trend following | +0.81 % a month against +1.17 % for buy and hold | yes |
+| J · Microcaps | median −2.56 % per trade; the mean, +0.11 %, is inflated by a few jumps | yes |
+
+Turn of the month: the rule made 2 % a year while buying the index and doing nothing made 13.25 % a year over the same period. Proving such a small effect against so much noise would take about two hundred years of data.
+
+#### Third era: the last attempt, over several days (signed)
+
+| Family | The number that killed it | Signed |
+|---|---|---|
+| K · Regime (200-day average) | gives up 4.6 points a year; not worth it | yes |
+| R · Regime detector | 1.9 false alarms a year (maximum: 1) | yes |
+
+Across the three eras: ten studies with a contract signed and sealed before looking, plus the three pre-market veins, closed at the end with the same system. The first-era studies are measured but unsealed.
+
+Three mirages repeat themselves:
+
+- The tide: when the whole market rises, any strategy that buys looks smart.
+- Momentum: what was already rising tends to rise a little more; many "new signals" were that old effect under another name.
+- The spectacular case: a few huge jumps that inflate the average.
+
+And under all three, the toll: once the mirages were removed and the cost was paid, nothing was left.
+
+### The bill, to the cent
+
+The equities programme cost about €2,000 in total. In crypto, €0, because the data was free. What was earned, in both markets: zero.
+
+---
+
+## Part III · Forex, again (December 2025 – June 2026)
+
+Exploratory, with nothing sealed in advance and no kill criterion fixed beforehand.
+
+| Study | What happened | Verdict |
+|---|---|---|
+| Backtest grid, three strategies | 0 trades in all three, because of a position-handling bug | couldn't be measured |
+| Exits and filters over 86–111 symbols | $83.5 million in backtest with 67,983 trades, but 99.4 % of the profit came from 100 trades in industrial metals; the main pairs lost; unrealistic spreads | dies |
+| RSI and moving-average crossover | 16 trades in the test segment; between −$383 and −$508; Sharpe between −2.4 and −3.2; a self-contradicting signal | dies |
+| Weekly selection of 15–16 pairs ("APPROVED") | backtest, 24 unseen weeks: $10,000 to $32,056 (+220.6 %), Sharpe 5.72, profit factor 7.34. On a demo account: 0 trades in 5 weeks, then losses; it never matched its backtest | dies |
+| Forensic audit (June 2026) | six fronts; decision: archive everything written for MetaTrader and rebuild it in Python | tool |
+
+In January 2026, a version of the same grid tested 6 variants × 1,296 combinations and kept the best one, with no threshold fixed before launching it.
+
+That "APPROVED" was not a seal: it was a verdict given after seeing the result.
+
+---
+
+## The score, across the three markets
+
+Forty-one studies, tens of ideas, months of work, and not a single rule that won repeatedly after paying costs. Zero deployable edge.
+
+---
+
+🇪🇸 Versión en español más abajo · *Spanish version below.*
+
+---
+
+# Resultados — cifras clave por estudio
+
+Estas son las cifras que aparecen en el libro *Acertar no basta para ganar*, reunidas aquí para que se puedan cruzar de un vistazo. Salvo que se diga otra cosa, cada cifra sale de un backtest (una simulación sobre datos históricos); alguna, de una cuenta de demostración, y se indica. Ninguna sale de una cuenta real.
+
+En total: cuarenta y un estudios, cinco en divisas, quince en criptomonedas y veintiuno en bolsa.
+
+---
+
+## Las tres formas de perder
+
+No todos los «no» valen lo mismo. El libro separa tres maneras de que una idea fracase, y confundirlas lleva a decisiones tontas:
+
+- No funciona: se midió bien y el efecto no está, o va en contra. Un no definitivo.
+- No se pudo medir: no había casos suficientes para distinguir una señal del azar. No es un «no hay», es un «no se puede saber todavía».
+- Funciona, pero no basta: el efecto existe y es positivo, pero no supera el listón fijado de antemano.
+
+Algunos estudios no eran apuestas, sino piezas de medición: una herramienta (por ejemplo, el modelo de coste) o un control para comparar.
+
+---
+
+## Antes de todo, las divisas (agosto de 2025)
+
+El proyecto empezó por el forex, sobre MetaTrader 5. Exploratorio, sin nada sellado de antemano.
+
+| Estudio | Qué pasó | Veredicto |
+|---|---|---|
+| Fuerza de cada moneda contra todas | 163 divisas, 13.203 pares; −0,8 % frente a un objetivo de +35–40 % por semana; los pares exóticos no se podían operar (sin liquidez ni spread real) | no funciona |
+| Motor anti-spread | infraestructura, no estrategia; nunca llegó a un veredicto de backtest | sin veredicto |
+
+La vuelta a las divisas está en la Parte III.
+
+---
+
+## Parte I · Criptomonedas — quince ideas
+
+Trece hipótesis de mercado, una herramienta y un control. Las últimas puertas de esta parte se sellaron en agosto y septiembre de 2026.
+
+| # | Idea | Qué pasó | Veredicto |
+|---|---|---|---|
+| 1 | Cascada de liquidaciones | −4,7 %/año | no funciona |
+| 2 | Ignición (momentum) | moneda al aire; 0 sobreviven | no funciona |
+| 3 | Funding → dirección | negativa en 24 de 24 variantes | no funciona |
+| 4 | Rejilla v4 (ciclos) | 0 de 720 sobreviven | no funciona |
+| 5 | Whitelist | 0 de 911 sobreviven | no funciona |
+| 6 | Posicionamiento continuo | −0,25 % por día operado; 0 de 6 señales aportan | no funciona |
+| 7 | Carry | +6,5 %/año, bajo el listón del 12 % | funciona, no basta |
+| 8 | Agotamiento (BTC/ETH) | 49 casos, faltaban 242 | no se pudo medir |
+| 9 | Agotamiento (12 monedas) | 174 casos, faltaban 1.262 | no se pudo medir |
+| 10 | Capitulación | 288 casos, faltaban 821 | no se pudo medir |
+| 11 | Triple extremo | 240 casos, faltaban 1.496 | no se pudo medir |
+| 12 | Ignición (variante horaria) | tampoco confirma fuera de muestra | no funciona |
+| 13 | Modelo de coste v2 | validado (0,27 %) | herramienta |
+| 14 | Control solo-precio | base de medición | control |
+| 15 | «Domingo bajista» | era la marea, no habilidad | no funciona (marea) |
+
+La cascada de liquidaciones, el estudio mejor documentado (backtest):
+
+- Rebote bruto medido: +0,034 %.
+- Coste de operar (ida y vuelta): en torno al 0,15 %, más de cuatro veces el rebote.
+- Operada durante un año con un tamaño de posición prudente: −4,7 % anual. Con un tamaño agresivo, habría arruinado la cuenta.
+- Operaciones ganadoras: 24,4 %. Acertar y ganar no son lo mismo.
+- Datos: en un solo año de datos gratuitos, casi tres millones de registros y más de cuatro mil cascadas.
+- Sellada el 27 de agosto de 2026.
+
+Otras cifras de esta parte:
+
+- Ignición: la mejor «casilla» daba un +70 % al año, pero era la mejor de 1.536, y eran treinta días de datos estirados a un año. La casilla mediana perdía un 0,22 % cada día. Un error de cálculo inflaba el coste unas doscientas veces.
+- Posicionamiento continuo (la última puerta, sellada el 4 de septiembre de 2026): casi diecisiete mil días-moneda, de mayo de 2022 a agosto de 2026, en las doce monedas grandes.
+- Coste en datos de pago: 0 €.
+- Para comparar: comprar el índice de la bolsa americana y no tocarlo dio un 10,8 % al año, de 1993 a 2026, en la misma prueba.
+
+Siete de las quince se firmaron antes de mirar los datos (la cascada, el carry, el posicionamiento, las tres de agotamiento de doce monedas, capitulación y triple extremo, y el control). Las otras ocho se hicieron antes de montar ese sistema, o eran herramientas: se midieron con el mismo cuidado, pero sin sello.
+
+---
+
+## Parte II · Bolsa — más de veinte estudios, cada uno con su autopsia y su número
+
+### Tres épocas, y cómo el método aprendió a no engañarse
+
+Veintiún estudios en tres épocas, en las que el método fue madurando por el camino. Ninguno con una ventaja que sobreviviera al coste.
+
+#### Primera época: pensé que lo tenía (medidas, aún sin sello)
+
+| Estudio | El número que lo cerró | Veredicto |
+|---|---|---|
+| La cacería que seguía al sol: premercado (gappers) | acierto del 53 % frente a una base del 42 %; 21.730 gappers, 263 combinaciones | sin señal |
+| · intradía: ¿el pico de la mañana sigue subiendo? | −0,35 % por operación | muere (sellada después) |
+| · estructura: ¿edad, splits o tipo separan? | −0,13 %; el positivo era junio | muere (sellada después) |
+| · presión bajista: ¿el short crowding predice? | era liquidez, no short: −0,18 % | muere (sellada después) |
+| Mercados del mundo (el patrón fuera de EE. UU.) | 0 reglas operables en 7 bolsas | explorado |
+| Rebote tras una pausa técnica (halt-resume) | factor de beneficio real 1,04; el 12,6 era un espejismo por mirar el futuro | sin ventaja |
+| 21.384 pausas de mercado | mejor AUC 0,58 (una moneda: 0,50) | sin ventaja |
+| Gap-up limpio: seguir el salto de apertura | 1 de 20 aciertos aparente; era ilusión | muere |
+| Reversión del gap: apostar a que el salto se deshace | −1,40 % por operación (mediana) | muere |
+| Contagio de sector | la señal no cubre el coste | muere |
+
+La cacería que seguía al sol se exploró antes de tener la disciplina montada: se documentó y se selló después de haber visto el terreno. Un sello tardío no convierte un hallazgo en una predicción; solo impide que nadie, ni el autor, reescriba a posteriori lo que se hizo. Las tres vetas del premercado se cerraron al final con el mismo sistema de sellado.
+
+#### Segunda época: el contrato firmado antes de mirar
+
+| Familia | El número que la mató | Firma |
+|---|---|---|
+| A · Coste real | herramienta: spread mediano 0,06 %; en la apertura, entre 0,3 % y 0,4 % | no (herramienta) |
+| B · Flujo agresor | −0,035 % por operación: señal ~0,01 % frente a coste ~0,06 %; el placebo la iguala | sí |
+| C · Momentum tardío | la ganancia fuera de muestra salía de un solo día, en que subió el 87 % de las acciones | sí |
+| D · Amplitud | explica el 0,6 % del movimiento | sí |
+| E · Tras resultados | −0,73 % frente al control | sí |
+| F · Entrar al índice | el 96 % del efecto era momentum | sí |
+| G · Fin de mes | señal +0,17 %, placebo +0,19 % por operación (S&P 500, 2016-2026; contraste 2005-2015) | sí |
+| I · Seguir tendencia | +0,81 % al mes frente a +1,17 % de comprar y mantener | sí |
+| J · Microcaps | mediana −2,56 % por operación; la media, +0,11 %, la inflan unos pocos saltos | sí |
+
+Fin de mes: la regla rendía un 2 % al año, y quien compró el índice y no hizo nada ganó un 13,25 % al año en el mismo periodo. Para demostrar un efecto tan pequeño contra tanto ruido harían falta unos doscientos años de datos.
+
+#### Tercera época: el último intento, a varios días (firmadas)
+
+| Familia | El número que la mató | Firma |
+|---|---|---|
+| K · Régimen (media 200) | cede 4,6 puntos al año; no compensa | sí |
+| R · Detector de régimen | 1,9 falsas alarmas al año (máximo: 1) | sí |
+
+Sumando las tres épocas: diez estudios con contrato firmado y sellado antes de mirar, más las tres vetas del premercado, cerradas al final con el mismo sistema. Los de la primera época, medidos pero sin ese sello.
+
+Tres espejismos se repiten:
+
+- La marea: cuando todo el mercado sube, cualquier estrategia que compre parece lista.
+- El momentum: lo que ya venía subiendo tiende a seguir subiendo un poco más; muchas «señales nuevas» eran ese efecto viejo con otro nombre.
+- El caso espectacular: unos pocos saltos enormes que inflan la media.
+
+Y por debajo de los tres, el peaje: al quitar los espejismos y pagar el coste, no quedaba nada.
+
+### La factura, al céntimo
+
+El programa de bolsa costó unos 2.000 € en total. En cripto, 0 €, porque los datos eran gratis. Lo ganado, en los dos mercados: cero.
+
+---
+
+## Parte III · Divisas, otra vez (diciembre de 2025 – junio de 2026)
+
+Exploratorio, sin nada sellado de antemano ni un criterio fijado para descartar.
+
+| Estudio | Qué pasó | Veredicto |
+|---|---|---|
+| Rejilla de backtests, tres estrategias | 0 operaciones en las tres, por un error en el manejo de las posiciones | no se pudo medir |
+| Salidas y filtros sobre 86-111 símbolos | 83,5 millones de dólares en backtest con 67.983 operaciones, pero el 99,4 % del beneficio salía de 100 operaciones en metales industriales; los pares principales perdían; spreads irreales | muere |
+| RSI y cruce de medias | 16 operaciones en el tramo de examen; entre −383 y −508 dólares; Sharpe entre −2,4 y −3,2; señal contradictoria | muere |
+| Selección semanal de 15-16 pares («APROBADO») | backtest de 24 semanas no vistas: de 10.000 a 32.056 dólares (+220,6 %), Sharpe 5,72, factor de beneficio 7,34. En cuenta de demostración: 0 operaciones en 5 semanas y después pérdidas; nunca replicó su backtest | muere |
+| Auditoría forense (junio de 2026) | seis frentes; decisión: archivar todo lo escrito para MetaTrader y rehacerlo en Python | herramienta |
+
+En enero de 2026, una versión de esa misma rejilla probó 6 variantes × 1.296 combinaciones y se quedó con la mejor, sin un umbral fijado antes de lanzarla.
+
+Aquel «APROBADO» no fue un sello: fue un veredicto puesto después de ver el resultado.
+
+---
+
+## El marcador, en los tres mercados
+
+Cuarenta y un estudios, decenas de ideas, meses de trabajo, y ni una sola regla que ganara de forma repetida después de pagar los costes. Cero edge desplegable.
